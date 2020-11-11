@@ -51,6 +51,22 @@ namespace TechJobsTests
 
         }
 
+        [TestMethod]
+        public void TestNull()
+        {
+            Job job1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType(), new CoreCompetency("Persistence"));
+            Assert.AreEqual("Data not available", job1.JobType.ToString());
+
+
+        }
+        [TestMethod]
+        public void TestEmptyJobMessage()
+        {
+            Job job1 = new Job();
+            String testString = "OOPS! This job does not seem to exist.";
+            Assert.AreEqual(testString, job1.ToString());
+        }
+
 
     }
 }

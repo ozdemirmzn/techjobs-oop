@@ -5,7 +5,7 @@ namespace TechJobsOO
     {
         private int id;
         private static int nextId = 1;
-        private string Value;
+        public string Value;
 
         // TODO: Change the fields to auto-implemented properties.
 
@@ -33,7 +33,14 @@ namespace TechJobsOO
 
         public override string ToString()
         {
-            return Value;
+            if (Value == null || Value == "")
+            {
+                return "Data not available";
+            }
+            else
+            {
+                return Value;
+            }
         }
     }
     

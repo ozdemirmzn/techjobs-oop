@@ -48,13 +48,23 @@ namespace TechJobsOO
         // TODO: Generate Equals() and GetHashCode() methods.
         public override string ToString()
         {
-            return "ID:  _______" +
-                   "Name: _______" +
-                   "Employer: _______" +
-                   "Location: _______" +
-                   "Position Type: _______" +
-                   "Core Competency: _______";
+            /*if (Name == "" && EmployerName.Value == "" && EmployerLocation.Value == "" && JobType.Value == "" && JobCoreCompetency.Value == "" ||
+                Name == null && EmployerName.Value == null && EmployerLocation.Value == null && JobType.Value == null && JobCoreCompetency.Value == null)*/
+            if (Name == null || Name == "")
+            {
+                return "OOPS! This job does not seem to exist.";
+            }
+            else
+            {
 
+                return "ID:  _______" +
+                       "Name: _______" +
+                       "Employer: _______" +
+                       "Location: _______" +
+                       "Position Type: _______" +
+                       "Core Competency: _______";
+
+            }
         }
 
     }
