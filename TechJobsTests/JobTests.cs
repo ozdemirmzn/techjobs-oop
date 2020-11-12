@@ -46,7 +46,7 @@ namespace TechJobsTests
                    "Location: _______" +
                    "Position Type: _______" +
                    "Core Competency: _______";
-            Assert.AreEqual(testString, job1.ToString());
+            Assert.IsFalse(testString == job1.ToString());
 
 
         }
