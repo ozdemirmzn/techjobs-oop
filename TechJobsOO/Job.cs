@@ -64,6 +64,8 @@ namespace TechJobsOO
                        $"Position Type: {JobType}\n" +
                        $"Core Competency: {JobCoreCompetency}\n";
 
+
+
             }
         }
 

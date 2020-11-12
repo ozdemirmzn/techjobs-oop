@@ -1,11 +1,11 @@
 ﻿using System;
 namespace TechJobsOO
 {
-    public class PositionType
+    public class PositionType : JobField
     {
         
 
-        public PositionType(string value) : base()
+        public PositionType(string value) : base(value)
         {
             
         }

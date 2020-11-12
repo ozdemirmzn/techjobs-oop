@@ -54,7 +54,7 @@ namespace TechJobsTests
         [TestMethod]
         public void TestNull()
         {
-            Job job1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType(), new CoreCompetency("Persistence"));
+            Job job1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType(""), new CoreCompetency("Persistence"));
             Assert.AreEqual("Data not available", job1.JobType.ToString());
 
 

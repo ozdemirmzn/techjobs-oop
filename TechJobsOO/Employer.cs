@@ -5,7 +5,7 @@ namespace TechJobsOO
     {
         
 
-        public Employer(string value) : base()
+        public Employer(string value) : base(value)
         {
             
         }

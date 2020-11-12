@@ -1,11 +1,11 @@
 ﻿using System;
 namespace TechJobsOO
 {
-    public class CoreCompetency
+    public class CoreCompetency : JobField
     {
         
 
-        public CoreCompetency(string value) : base()
+        public CoreCompetency(string value) : base(value)
         {
             
         }
