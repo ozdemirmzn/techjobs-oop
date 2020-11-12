@@ -57,12 +57,12 @@ namespace TechJobsOO
             else
             {
 
-                return "ID:  _______" +
-                       "Name: _______" +
-                       "Employer: _______" +
-                       "Location: _______" +
-                       "Position Type: _______" +
-                       "Core Competency: _______";
+                return $"ID: {Id}\n" +
+                       $"Name: {Name}\n" +
+                       $"Employer: {EmployerName}\n" +
+                       $"Location: {EmployerLocation}\n" +
+                       $"Position Type: {JobType}\n" +
+                       $"Core Competency: {JobCoreCompetency}\n";
 
             }
         }
